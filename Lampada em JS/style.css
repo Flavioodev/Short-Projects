@@ -9,12 +9,27 @@
 h1{
     color:rgb(81, 184, 184); 
 }
-header, main{
+body{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
 button{
-    width: 90px;
+    display: inline-block;
+    background-color: #EAD2AC;
+    height: 23px;
+    width: 80px;
+    border-radius: 15px;
+    border-width: 0.5px;;
 }
+
+button:hover{
+    background-color: #e7c185;
+}
+
+
+/*rgb(94, 196, 162);
+cor do botton amarelo: #EAD2AC;
+
+*/
