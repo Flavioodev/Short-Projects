@@ -9,7 +9,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to bottom,#416393,hsl(214, 61%, 50%),#6E84DC 105%);
+    background-image: linear-gradient(to bottom,#416393 30%,hsl(192, 44%, 51%)135%);
     background-attachment: fixed;
 }
 
