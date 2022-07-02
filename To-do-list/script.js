@@ -1,7 +1,13 @@
-const inputElement = document.getElementById("idTarefa");
+const inputElement = document.getElementById("idInput");
 const buttonElement = document.querySelector("form button");
 
-buttonElement.onclick = Evento =>{
-    Evento.prereventDefault();
-
+const tarefas = [];
+buttonElement.onclick = evento =>{
+    evento.preventDefault();
+    if(inputElement.value){ //para não adicionar string vazia->que é lida como false
+        tarefas.push(inputElement.value)
+        inputElement.value = ""
+        console.log(tarefas)
+    }
+    
 }

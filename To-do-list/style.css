@@ -3,14 +3,17 @@
 }
 
 body{
-    background-image: linear-gradient(40deg, #09688d,rgb(0, 0, 0) 280%);
+    background-image: linear-gradient(40deg, #1b91c0,rgb(0, 0, 0) 280%);
     background-attachment: fixed;
     color: white;
 }
 
 #ToDoMain{
-    padding: 15px;
-}
+    display: block;
+    
+    flex-direction: column;
+    
+} 
 
 input{
     padding: 10px;
@@ -30,20 +33,34 @@ form button{
     color: white;
     font-family: Cambria;
     border-radius: 4px;
-    border:none
+    border:none;
 }
 
 #tarefas button{
-    box-shadow: 0 0 2.5px black;
-    background: rgb(211, 129, 5);
-    padding: 3px 4.5px;
-    font-size: 16px;
-    color: white;
+    font-size: 15px;
+    color: rgba(196, 35, 35, 0.952);
     font-family: Cambria;
-    border-radius: 4px;
-    border:none
-
+    background-color: transparent;
+    border:none;
+    border-radius: 2px;
+   
 }
-span{
-    font-size: 20px;
+
+#tarefas button:hover{
+    color: rgba(165, 9, 9, 0.952);
+}
+
+#tarefas{
+    display: inline-block;
+    border: none;
+    padding: 5px;
+}
+
+
+h2{
+    margin-bottom: 3px;
+}
+
+span, li{
+    font-size: 17px;
 }
