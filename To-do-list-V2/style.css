@@ -14,7 +14,7 @@ body{
     font: bold 2rem 'Open Sans', sans-serif;
 }
 
-.toDoMain{
+.to-do-main{
     display: flex;
     width: 50vw;
     flex-direction: column;
@@ -35,7 +35,7 @@ body{
     box-shadow: 1px 1px 5px black;
 }
 
-.toDoTasks{
+#toDoItems{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -60,7 +60,7 @@ body{
 .item:hover {
     cursor: pointer;
     transition: all .3s ease-in-out;
-    background-image: linear-gradient(to bottom,#006B60, #00C9AF 160%);
+    background-image: linear-gradient(to top,#006B60, #00C9AF 160%);
     color: white;
 }
 
@@ -76,7 +76,7 @@ body{
     text-decoration:line-through;
 }
 
-.newItem{
+#newItem{
     display: flex;
     background-color: #fff59d;
     width: 100%;
@@ -88,7 +88,7 @@ body{
     font: inherit;
 }
 
-.newItem > input{
+#newItem > input{
     background-color: #fff59d;
     border: none;
     width: 70%;
@@ -96,7 +96,7 @@ body{
     font: inherit;
 }
 
-.newItem > input::placeholder {
+#newItem > input::placeholder {
     font-style: italic;
     font-weight: normal;
 }
