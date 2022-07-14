@@ -1,4 +1,4 @@
-let arrayItems = [];
+const getBanco = () => JSON.parse(localStorage.getItem('toDoItems')) ?? [];
 
 const criarItem = (tarefa, status, indice) => {
     const item = document.createElement('label');
@@ -20,7 +20,8 @@ const limparLista = () =>{
 
 const atualizarLista = () => {
     limparLista();
-    arrayItems.forEach ( (item, indice) => criarItem (item.tarefa, item.status, indice));
+    const banco = getBanco();
+    banco.forEach ( (item, indice) => criarItem (item.tarefa, item.status, indice));
 }
 
 const inserirItem = (evento) => {
