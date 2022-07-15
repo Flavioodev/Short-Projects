@@ -1,6 +1,11 @@
-const getBanco = () => JSON.parse(localStorage.getItem('toDoItems')) ?? [];
+const getBanco = () => JSON.parse(localStorage.getItem('toDoItems')) ?? [];//testar sem coalescência nem nada
+const setBanco = (banco) => localStorage.setItem ('toDoItems', JSON.stringify(banco));
 
-const criarItem = (tarefa, status, indice) => {
+
+const bancoItems = getBanco();
+const toDoItems = document.querySelector('#toDoItems');
+
+const criarHTMLItem = (tarefa, status, indice) => {
     const item = document.createElement('label');
     item.classList.add('item');
     item.innerHTML = `
@@ -8,39 +13,40 @@ const criarItem = (tarefa, status, indice) => {
         <div>${tarefa}</div>
         <input type="button" value="X" data-indice=${indice}>
     `;
-    document.getElementById('toDoItems').appendChild(item);
+    toDoItems.appendChild(item);
 }
 
 const limparLista = () =>{
-    const items = document.querySelector('#toDoItems');
-    while(items.firstChild){
-        items.removeChild(items.lastChild);
+    while(toDoItems.firstChild){
+        toDoItems.removeChild(toDoItems.lastChild);
     }
 }
 
 const atualizarLista = () => {
     limparLista();
-    const banco = getBanco();
-    banco.forEach ( (item, indice) => criarItem (item.tarefa, item.status, indice));
+    bancoItems.forEach ((item, indice) => criarHTMLItem (item.tarefa, item.status, indice));
 }
 
 const inserirItem = (evento) => {
     const tecla = evento.key;
     const texto = evento.target.value;
     if (tecla === 'Enter'){
-        arrayItems.push ({'tarefa': texto, 'status': ''});
+        bancoItems.push ({'tarefa': texto, 'status': ''});
+        setBanco(bancoItems);
         atualizarLista();
         evento.target.value = '';
     }
 }
 
 const deletarItem = (indice) =>{
-    arrayItems.splice(indice,1);
+    bancoItems.splice(indice,1);
+    setBanco(bancoItems);
     atualizarLista();
 }
 
 const atualizarStatus = (indice) =>{
-    arrayItems[indice].status = arrayItems[indice].status === '' ? 'checked' : '';
+    bancoItems[indice].status = bancoItems[indice].status === '' ? 'checked' : '';
+    setBanco(bancoItems);
     atualizarLista();
 }
 
@@ -57,5 +63,6 @@ const clickItem = (evento) => {
 
 document.getElementById('newItem').addEventListener('keypress', inserirItem);
 document.getElementById('toDoItems').addEventListener('click', clickItem);
+
 
 atualizarLista();
