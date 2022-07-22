@@ -6,8 +6,8 @@
 
 <h2 align="center">Descrição</h2>
 <p align="center">
-Este é um projeto desenvolvido totalmete a nível didático, e que serviu para treinar, aprender e aprimorar conhecimentos de HTML e, principalmente, de CSS. 
-Com o desenvolvimento do formulário, passei a conhecer, superficialmente, recursos como: animações em CSS, o funcionamento das tags "fieldset" e "legend" e, também, obtive uma melhor noção sobre como as cores influenciam na experiência do usuário - assunto que me interessa e que estou pesquisando mais a respeito.
+Este é um projeto escrito totalmente a nível didático, e que serviu para treinar, aprender e aprimorar conhecimentos de HTML e, principalmente, de CSS. 
+Com o desenvolvimento do formulário, passei a conhecer recursos como: animações em CSS, o funcionamento das tags "fieldset" e "legend" e, também, obtive uma melhor noção sobre como as cores influenciam na experiência do usuário - assunto que me interessa e que estou pesquisando mais a respeito.
 </p>
 <br>
 
