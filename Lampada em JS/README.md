@@ -1,6 +1,5 @@
-<h1 align="center">Formulário</h1>
 <p align="center">
-  <img src="Lampada em JS/src/assets/to-readme/RDMLampJS.JPG">
+  <img src="src/assets/to-readme/RDMLampJS.JPG">
 </p>
 <br>
 
@@ -14,7 +13,7 @@ Este projeto trata-se de meu primeiro projeto postado no GitHub. E é um dos pri
 
 <h2 align="center">Projeto Funcionando</h2>
 <p align="center">
-    <img width="960px" height="540px" src="Lampada em JS/src/assets/to-readme/RDM-lamp.gif">
+    <img width="960px" height="540px" src="src/assets/to-readme/RDM-lamp.gif">
 </p>
 <br>
 
