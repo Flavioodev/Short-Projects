@@ -5,9 +5,9 @@
 
 <h2 align="center">Descrição</h2>
 <p align="center">
-Este projeto trata-se de meu primeiro projeto postado no GitHub. E é um dos primeiros projetos que desenvolvi também. O programa consiste em uma lâmpada que acende 
-  através de duas ações: clicar em "Ligar" ou passar o cursor do mouse sobre sua imagem; ela também apaga de duas maneiras: clicando em "Desligar" ou ao retirar o cursor de cima de sua imagem.
-  Toda vez que a lâmpada acende ou apaga, o background da página tem sua cor alterada. Além disso, a lâmpada também quebra, basta dar um duplo clique sobre ela.
+Este projeto trata-se de meu primeiro programa postado no GitHub. E é um dos primeiros que desenvolvi também. Ele consiste em uma lâmpada que acende 
+  através de duas ações: clicar em "Ligar" e passar o cursor do mouse sobre sua imagem; ela também apaga de duas maneiras: clicando em "Desligar" e ao retirar o cursor de cima de sua imagem.
+  Toda vez que a lâmpada acende ou apaga, a cor do background da página é alterada. Além disso, a lâmpada também quebra, basta dar um duplo clique sobre ela.
 </p>
 <br>
 
