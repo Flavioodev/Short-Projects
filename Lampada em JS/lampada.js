@@ -9,17 +9,21 @@ function isBroken(){
 function lampOn(){
     if (!isBroken()){
         setLamp.src = './imgs/ligada.jpg';
+        document.body.style.backgroundColor="#FFE135";
+        document.querySelector("#titulo").style.backgroundColor="#000000d3";
     }
 }
 
 function lampOff(){
     if (!isBroken()){
         setLamp.src = './imgs/desligada.jpg';
+        document.body.style.backgroundColor="#000000d3";
+        document.querySelector("#titulo").style.backgroundColor="initial";
     }
 }
 
 function LampBroken(){
-        setLamp.src = './imgs/quebrada.jpg'
+    setLamp.src = './imgs/quebrada.jpg'
 }
 
 ligar.addEventListener('click', lampOn);
