@@ -7,7 +7,7 @@
 <p align="center">
 Este projeto trata-se de meu primeiro programa postado no GitHub. E é um dos primeiros que desenvolvi também. Ele consiste em uma lâmpada que acende 
   através de duas ações: clicar em "Ligar" e passar o cursor do mouse sobre sua imagem; ela também apaga de duas maneiras: clicando em "Desligar" e ao retirar o cursor de cima de sua imagem.
-  Toda vez que a lâmpada acende ou apaga, a cor do background da página é alterada. Além disso, a lâmpada também quebra, basta dar um duplo clique sobre ela.
+  Toda vez que a lâmpada acende ou apaga, a cor do background da página é alterada. Além disso, a lâmpada também quebra, basta dar um duplo clique sobre ela. Depois de quebrada, não há como acendê-la novamente sem recarregar a página.
 </p>
 <br>
 
