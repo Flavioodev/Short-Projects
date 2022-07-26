@@ -9,13 +9,21 @@
 </head>
 <body>
     <div id="container">
-        <p id="tempo" class="label">Tempo:</p><p id="pausa" class="label">Pausa:</p><p id="cilcos" class="label"> Ciclos:</p>
+        <p id="pomodoro" class="label">Tempo:</p><p id="pausa" class="label">Pausa:</p><p id="ciclos" class="label"> Ciclos:</p>
         
-        <div id="tempoCount" class="count">
-            <p id=""></p>
-            
-
+        <div id="pomodoro-timer" class="timer">
+            <p id="pom-min">25</p><p class="doisPontos">:</p><p id="pom-seg">00</p>
         </div>
+
+        <p id="ciclosCount" class="timer">0</p>
+
+        <div id="pausa-timer" class="timer">
+            <p id="pausa_min">05</p><p class="doisPontos">:</p><p id="pausa-seg">00</p>
+        </div>
+        
+        <button id="start" class="btn">Começar</button>
+        <button id="stop" class="btn">Pausar</button>
+        <button id="restart">Restart</button>
     </div>
 
     <script src="./script.js"></script>
