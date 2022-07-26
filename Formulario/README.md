@@ -19,12 +19,11 @@ Com o desenvolvimento do formulário, passei a conhecer recursos como: animaçõ
 
 <h2 align="center">Como Rodar a Aplicação</h2>
 
-1. Crie uma pasta em seu computador
-2. Após abri-la, clique com o botão direito do mouse dentro dela, vá até "novo" e crie dois _Documentos de Texto_
-3. Copie o código do arquivo index.html presente em minha **pasta Formulario**, aqui no GitHub
-4. Cole o código dentro de um dos documentos de texto criados e renomeie esse arquivo para **index.html**; salve
-5. Faça o mesmo para o meu arquivo style.css: copie, cole e renomeie o outro arquivo txt para **style.css**
-6. Por fim, abra o seu arquivo index.html - o arquivo deverá abrir, automaticamente, em seu navegador
+1. Abra o terminal de seu computador 
+2. Navegue até o local onde pretende armazenar o projeto; para isso, use o comando _cd_ 
+3. Copie e cole o seguinte comando: git clone https://github.com/Flavioodev/Short-Projects.git 
+5. Abra a pasta em que guardou o projeto, vá até **Formulario** e abra o arquivo _index.html_ 
+6. Pronto, agora é só testar!
 <br>
 
 <h2 align="center">Tecnologias Utilizadas</h2>
