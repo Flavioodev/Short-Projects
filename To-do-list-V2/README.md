@@ -1,18 +1,17 @@
 ⚠️status: _em construção_
 
 <p align="center">
-  <img src="src/assets/to-readme/">
+  <img >
 </p>
 <br>
 
 <h2 align="center">Descrição</h2>
 Em breve
-
-<br>
+<br><br>
 
 <h2 align="center">Projeto Funcionando</h2>
 <p align="center">
-    <img src="">
+    <img src="src/assets/to-readme/GifToDoCreated.gif">
 </p>
 <br>
 
