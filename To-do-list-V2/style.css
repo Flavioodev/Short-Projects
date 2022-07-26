@@ -91,7 +91,7 @@ body{
 #newItem > input{
     background-color: #fff59d;
     border: none;
-    width: 70%;
+    width: 80%;
     outline: none;
     font: inherit;
 }
