@@ -6,7 +6,7 @@
 <br>
 
 <h2 align="center">Descrição</h2>
-Em breve
+<p align="center">EM BREVE</p>
 <br><br>
 
 <h2 align="center">Projeto Funcionando</h2>
