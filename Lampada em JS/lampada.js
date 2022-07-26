@@ -11,6 +11,7 @@ function lampOn(){
         setLamp.src = './imgs/ligada.jpg';
         document.body.style.backgroundColor="#FFE135";
         document.querySelector("#titulo").style.backgroundColor="#000000d3";
+        document.querySelector("#titulo").style.color="#FFE135";
     }
 }
 
@@ -19,11 +20,15 @@ function lampOff(){
         setLamp.src = './imgs/desligada.jpg';
         document.body.style.backgroundColor="#000000d3";
         document.querySelector("#titulo").style.backgroundColor="initial";
+        document.querySelector("#titulo").style.color="white";
     }
 }
 
 function LampBroken(){
     setLamp.src = './imgs/quebrada.jpg'
+    document.body.style.backgroundColor="#000000d3";
+    document.querySelector("#titulo").style.backgroundColor="initial";
+    document.querySelector("#titulo").style.color="white";
 }
 
 ligar.addEventListener('click', lampOn);

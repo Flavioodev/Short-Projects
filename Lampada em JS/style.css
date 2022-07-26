@@ -1,8 +1,8 @@
-
-
 #titulo{
     font-size:55px;
     color:white; 
+    padding-left: 7px;
+    padding-right: 7px;
 }
 body{
     display:flex;
