@@ -8,7 +8,10 @@ body{
     color: white;
 }
 
-
+h2{
+    margin-bottom: 5px;
+    font-size: 28px;
+}
 
 input{
     padding: 10px;
@@ -20,9 +23,9 @@ input{
     box-shadow: 0 0 3px black;
 }
 
-form button{
+#addButton{
     box-shadow: 0 0 2.5px black;
-    background: rgb(226, 177, 17);
+    background: rgb(236, 186, 21);
     padding: 8px 9px;
     font-size: 16px;
     color: white;
@@ -30,10 +33,18 @@ form button{
     border-radius: 4px;
     border:none;
 }
+#addButton:hover{
+    background: rgb(241, 196, 49);
+}
 
+#tarefas{
+    display: inline-block;
+    border: none;
+    padding: 5px;
+}
 #tarefas button{
     font-size: 15px;
-    color: rgba(196, 35, 35, 0.952);
+    color: red;
     font-family: Cambria;
     background-color: transparent;
     border:none;
@@ -45,19 +56,12 @@ form button{
     color: rgba(165, 9, 9, 0.952);
 }
 
-#tarefas{
-    display: inline-block;
-    border: none;
-    padding: 5px;
-}
-
-
-h2{
-    margin-bottom: 3px;
-}
-
-span, ul{
-    font-size: 17px;
+#tasksList{
+    padding-left: 0;/*por padrão, a lista dá um espaço à esquerda*/
     list-style-type: none;
-    padding-left: 0;
+}
+
+li{
+    font-size: 18px;
+    padding: 4px;
 }
