@@ -42,7 +42,7 @@ body{
     width: 100%;
 }
 
-.item{
+.lbl-item{
     display: flex;
     width: 100%;
     height: 50px;
@@ -53,28 +53,39 @@ body{
     background-color: #F3EADA;
 }
 
-.item > div {
+.lbl-item > .div-item {
     width: 90%;
 }
 
-.item:hover {
+.lbl-item:hover {
     cursor: pointer;
     transition: all .3s ease-in-out;
     background-image: linear-gradient(to top,#006B60, #00C9AF 160%);
     color: white;
 }
 
-.item > input[type='button'],
-.item > input[type='checkbox'] {
+.lbl-item > input[type='button'],
+.lbl-item > input[type='checkbox'] {
     
     width: 30px;
     height: 30px;
     font: inherit;
 }
 
-.item > input[type='checkbox']:checked  + div {
+.lbl-item > input[type='checkbox']:checked  + div {
     text-decoration:line-through;
 }
+
+
+/*estilização do inputEdicao em construção */
+.input-edicao{
+    background-color: #F3EADA;
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+
 
 #newItem{
     display: flex;
