@@ -47,7 +47,6 @@ legend{
 .labelInput{ 
     position: absolute;
     top: 1px;
-    
     pointer-events: none;
     transition: .5s;
     font-size: 14px;

@@ -21,4 +21,3 @@ buttonElement.onclick = evento =>{
         ulElement.removeChild(liElement)
     }
 }
-

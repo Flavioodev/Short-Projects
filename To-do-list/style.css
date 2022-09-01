@@ -2,6 +2,8 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+/*corrigindo commit*/
+
 body{
     background-image: linear-gradient(40deg, #1b91c0,rgb(0, 0, 0) 280%);
     background-attachment: fixed;
@@ -34,7 +36,7 @@ input{
     border:none;
 }
 #addButton:hover{
-    background: rgb(241, 196, 49);
+    background: rgb(239, 196, 54);
 }
 
 #tarefas{

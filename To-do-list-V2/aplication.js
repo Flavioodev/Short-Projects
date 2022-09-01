@@ -1,16 +1,17 @@
 const getBanco = () => JSON.parse(localStorage.getItem('toDoItems')) ?? [];//testar sem coalescência nem nada
 const setBanco = (banco) => localStorage.setItem ('toDoItems', JSON.stringify(banco));
 
-
 const bancoItems = getBanco();
 const toDoItems = document.querySelector('#toDoItems');
 
+let textoItem;
+
 const criarHTMLItem = (tarefa, status, indice) => {
     const item = document.createElement('label');
-    item.classList.add('item');
+    item.classList.add('lbl-item');
     item.innerHTML = `
         <input type="checkbox" ${status} data-indice=${indice}>
-        <div>${tarefa}</div>
+        <div class='div-item'>${tarefa}</div>
         <input type="button" value="X" data-indice=${indice}>
     `;
     toDoItems.appendChild(item);
@@ -29,7 +30,7 @@ const atualizarLista = () => {
 
 const inserirItem = (evento) => {
     const tecla = evento.key;
-    const texto = evento.target.value;
+    texto = evento.target.value;
     if (tecla === 'Enter'){
         bancoItems.push ({'tarefa': texto, 'status': ''});
         setBanco(bancoItems);
@@ -61,8 +62,27 @@ const clickItem = (evento) => {
     }
 }
 
-document.getElementById('newItem').addEventListener('keypress', inserirItem);
-document.getElementById('toDoItems').addEventListener('click', clickItem);
+
+//em construção
+const editarItem = (evento) => {
+    const item = document.createElement('input');//criando o input de edição no CSS
+    item.classList.add('input-edicao');
+    item.innerHTML = `
+        <input type="text">
+        <div>${texto}</div>
+    `;
+    toDoItems.appendChild(item);
+}
+
+
+
+const $ = document.querySelector.bind(document);
+
+$('#newItem').addEventListener('keypress', inserirItem);
+$('#toDoItems').addEventListener('click', clickItem);
+$('.lbl-item').addEventListener('dblclick', editarItem);
+
+
 
 
 atualizarLista();
